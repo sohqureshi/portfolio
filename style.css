@@ -616,10 +616,29 @@ body.scrolled .header--navbar {
     padding: 0 15px;
 }
 
+.header--nav a{
+    color: #fff;
+}
+.header--nav a:before{
+    background-color: #fff;  
+} 
+
+body.scrolled .header--navbar .nav li a{
+    color: #303030;
+}
+body.scrolled .header--navbar .nav li a:before{
+    color: #303030;
+}
+
+body.scrolled .header--nav .nav li a:hover,
+body.scrolled .header--nav .nav li a:focus a {
+    background: transparent;
+}
+
+
 .header--nav .nav li a {
     position: relative;
     padding: 15px 0 10px;
-    color: #303030;
     outline: 0;
 }
 
@@ -636,7 +655,6 @@ body.scrolled .header--navbar {
     bottom: 8px;
     width: 0;
     height: 2px;
-    background-color: #303030;
     -webkit-transition: width .25s ease-in-out;
             transition: width .25s ease-in-out;
 }

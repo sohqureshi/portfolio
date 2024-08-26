@@ -1,7 +1,7 @@
 <?php
 
-	$site_owners_email = 'example@example.com'; // Replace this with your own email address
-	$site_owners_name = 'Example'; // replace with your name
+	$site_owners_email = 'saniyasheikh16@gmail.com'; // Replace this with your own email address
+	$site_owners_name = 'Saniya Sheikh'; // replace with your name
 
 	$name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
 	$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
