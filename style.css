@@ -2,6 +2,23 @@ html,
 body {
     height: 100%;
 }
+.image-bnr {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.text-container {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(41, 41, 41, 0.8);
+    padding: 0.5rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
 .font-medium{
     font-size: medium;
 }
@@ -59,9 +76,9 @@ p:last-child {
     margin-right: 30px;
 }
 
-.wrapper {
+/* .wrapper {
     height: 100%;
-}
+} */
 
 /* 1.0. SIDE NAV */
 
@@ -622,9 +639,7 @@ body.scrolled .header--navbar {
 .header--nav a:before{
     background-color: #fff;  
 } 
-.header--nav .nav li a:hover, .header--nav .nav li a:focus, .header--nav .nav li a{
-    color: #303030;
-}
+
 body.scrolled .header--navbar .nav li a{
     color: #303030;
 }
@@ -800,9 +815,9 @@ body.scrolled .header--nav .nav li a:focus a {
 /*------------------------------------*\
     4. ABOUT AREA
 \*------------------------------------*/
-#about {
+/* #about {
     padding: 80px 0;
-}
+} */
 
 #about h3 {
     font-weight: 300;
@@ -831,7 +846,7 @@ body.scrolled .header--nav .nav li a:focus a {
 .about--progress-items .progress {
     background-color: #e9e9e9;
     border-radius: 0;
-    height: 5px;
+    height: 12px;
     overflow: visible;
     margin-bottom: 15px;
 }
@@ -2223,3 +2238,58 @@ body.scrolled #backToTop {
 }
 
 
+@media (min-width:1281px) {
+
+    /* hi-res laptops and desktops */
+    .text-container h3 {
+        font-size: 60px !important;
+    }
+
+    .text-container p {
+        font-size: 25px !important;
+    }
+    .skill-cat-tag{
+        display: none;
+    }
+}
+
+
+ /* Media Query for Mobile Devices */
+ @media (max-width: 480px) {
+    .skill-cat-tag{
+        display: none;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    /* .skill-cat-tag{
+        display: none;
+    } */
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .text-container {
+        left: 60% !important;
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .text-container {
+        left: 60% !important;
+    }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+   
+    .text-container {
+        left: 60% !important;
+    }
+    .skill-cat-tag {
+        display: block;
+    }
+    
+}
