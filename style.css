@@ -622,7 +622,9 @@ body.scrolled .header--navbar {
 .header--nav a:before{
     background-color: #fff;  
 } 
-
+.header--nav .nav li a:hover, .header--nav .nav li a:focus, .header--nav .nav li a{
+    color: #303030;
+}
 body.scrolled .header--navbar .nav li a{
     color: #303030;
 }
@@ -633,6 +635,7 @@ body.scrolled .header--navbar .nav li a:before{
 body.scrolled .header--nav .nav li a:hover,
 body.scrolled .header--nav .nav li a:focus a {
     background: transparent;
+    color: black;
 }
 
 
